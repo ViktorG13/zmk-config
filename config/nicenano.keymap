@@ -9,7 +9,6 @@
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
     keymap {
         compatible = "zmk,keymap";
-        &out OUT_USB;
         
         default_layer {
             &studio_unlock;
