@@ -11,6 +11,7 @@
     keymap {
         compatible = "zmk,keymap";
         &out OUT_USB
+        &studio_unlock
 
         default_layer {
             bindings = <
