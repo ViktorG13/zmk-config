@@ -12,8 +12,8 @@ git push
 
 clear
 
-read -p "When download terminates press enter..."
+# read -p "When download terminates press enter..."
 
-mv ~/Downloads/firmware.zip .
+rm -rf ~/Downloads/firmware.zip
 
 clear

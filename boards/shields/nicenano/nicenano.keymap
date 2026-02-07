@@ -13,7 +13,7 @@
         default_layer {
             display-name = "Base"
             bindings = <
-                &studio_unlock &kp B
+                &kp A &kp B
                 &kp C &kp D
             >;
         };
