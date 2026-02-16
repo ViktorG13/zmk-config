@@ -14,7 +14,11 @@ url: https://example.com
 # See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files#features
 features:
   - keys
+  - Bluetooth
   - studio  # Remove this line if your keyboard will not support ZMK Studio
 
 requires:
   - pro_micro
+
+append:
+  EXTRA_DTC_OVERLAY_FILE: nrf52840-nosd.overlay
