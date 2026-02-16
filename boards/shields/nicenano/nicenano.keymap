@@ -15,8 +15,8 @@
             bindings = <
                 &bt BT_SEL 0
             >;
-        }
-    }
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
 
