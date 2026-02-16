@@ -19,6 +19,3 @@ features:
 
 requires:
   - pro_micro
-
-append:
-  EXTRA_DTC_OVERLAY_FILE: nrf52840-nosd.overlay
