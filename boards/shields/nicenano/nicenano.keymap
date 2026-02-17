@@ -8,31 +8,31 @@
         combo_esc {
             timeout-ms = <100>;
             key-positions = <0 1>;
-            bindings = <&kp ESC>;
+            bindings = <&kp F17>;
         };
 
         combo_enter {
             timeout-ms = <100>;
             key-positions = <2 3>;
-            bindings = <&kp ENTER>;
+            bindings = <&kp F18>;
         };
 
         combo_backspace {
             timeout-ms = <100>;
             key-positions = <1 3>;
-            bindings = <&kp BSPC>;
+            bindings = <&kp F19>;
         };
 
         combo_space {
             timeout-ms = <100>;
             key-positions = <1 2>;
-            bindings = <&kp SPACE>;
+            bindings = <&kp F20>;
         };
 
         combo_tab {
             timeout-ms = <100>;
             key-positions = <0 2>;
-            bindings = <&kp TAB>;
+            bindings = <&kp F21>;
         };
     };
 
@@ -44,8 +44,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <
-                &kp A
-                &kp ESC
+                &kp F13
+                &kp F22
             >;
         };
 
@@ -55,8 +55,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <
-                &kp D
-                &kp ENTER
+                &kp F16
+                &kp F23
             >;
         };
     };
@@ -67,8 +67,8 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &td_a   &kp B
-                &kp C   &td_d
+                &td_a   &kp F14
+                &kp F15   &td_d
             >;
         };
     };
