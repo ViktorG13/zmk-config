@@ -1,0 +1,19 @@
+#! /bin/sh
+
+clear
+
+rm -rf firmware.zip nicenano-nice_nano-zmk.uf2
+
+clear
+
+git add .
+git commit -m "$1"
+git push
+
+clear
+
+# read -p "When download terminates press enter..."
+
+rm -rf ~/Downloads/firmware.zip
+
+clear
