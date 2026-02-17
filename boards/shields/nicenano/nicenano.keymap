@@ -7,34 +7,72 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        // combo_toggle_connection {
-        //     timeout-ms = <50>;
-        //     key-positions = < 0 1 >;
-        //     bindings = <
-        //         &out OUT_TOG
-        //     >;
-        // };
-        combo_rst_bluetooth {
-            timeout-ms = <50>;
-            key-positions = < 0 
-                                3 >;
-            bindings = <
-                &out OUT_BLE
-                &bt BT_CLR
-            >;
-        };
-    };
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            display-name = "Base";
-            bindings = <
-                &kp A &kp B
-                &kp C &kp D
-            >;
-        };
-    };
+	combos {
+		compatible = "zmk,combos";
+		// combo_toggle_connection {
+		//     timeout-ms = <50>;
+		//     key-positions = < 0 1 >;
+		//     bindings = <
+		//         &out OUT_TOG
+		//     >;
+		// };
+		// combo_rst_bluetooth {
+		// 	timeout-ms = <100>;
+		// 	key-positions = < 0 1 >;
+		// 	bindings = <
+		// 	&bt BT_CLR
+		// 	&out OUT_BLE
+		// 	>;
+		// };
+		combo_rst_usb {
+			timeout-ms = <100>;
+			key-positions = < 0 3 >;
+			bindings = <
+			&out OUT_USB
+			>;
+		};
+		combo_bootloader {
+			timeout-ms = <75>;
+			key-positions = <2 3>;
+			bindings = < &bootloader >;
+		};
+		combo_bt_clear {
+			timeout-ms = <75>;
+			key-positions = <0 1>;
+			bindings = < &bt BT_CLR >;
+		};
+		combo_output_toggle {
+			timeout-ms = <75>;
+			key-positions = <0 3>;
+			bindings = < &out OUT_TOG >;
+		};
+		combo_force_usb {
+			timeout-ms = <75>;
+			key-positions = <1 3>;
+			bindings = < &out OUT_USB >;
+		};
+		combo_force_ble {
+			timeout-ms = <75>;
+			key-positions = <0 2>;
+			bindings = < &out OUT_BLE >;
+		};
+		combo_soft_reset {
+			timeout-ms = <75>;
+			key-positions = <0 1 2>;
+			bindings = < &sys_reset >;
+		};
+		
+		
+	};
+	keymap {
+		compatible = "zmk,keymap";
+		
+		default_layer {
+			display-name = "Base";
+			bindings = <
+			&kp A &kp B
+			&kp C &kp D
+			>;
+		};
+	};
 };
