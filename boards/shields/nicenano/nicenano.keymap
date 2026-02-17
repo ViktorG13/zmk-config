@@ -43,7 +43,6 @@
             label = "TD_A";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <
                 &kp A
                 &kp ESC
@@ -55,7 +54,6 @@
             label = "TD_D";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <
                 &kp D
                 &kp ENTER
